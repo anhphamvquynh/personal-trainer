@@ -4,7 +4,6 @@ import customerService from './services/customerService';
 import HeaderCustomer from './Customer/HeaderCustomer';
 import SearchCustomer from './Customer/SearchCustomer';
 import CustomerTable from './Customer/CustomerTable';
-import AddCustomer from './Customer/AddCustomer';
 
 function Customers() {
   const [customers, setCustomers] = useState([]);
@@ -127,7 +126,6 @@ function Customers() {
 
   return (
     <Paper>
-      <AddCustomer addCustomer={handleAddCustomer} />
       <SearchCustomer
         setFilter={setFilter}
         handleAddCustomer={handleAddCustomer}

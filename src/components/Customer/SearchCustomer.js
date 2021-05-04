@@ -36,6 +36,7 @@ export default function SearchCustomer({ setFilter, handleAddCustomer }) {
                     inputProps={{ 'aria-label': 'search' }}
                 />
             </div>
+            <AddCustomer addCustomer={handleAddCustomer} />
         </Toolbar>
     )
 }
